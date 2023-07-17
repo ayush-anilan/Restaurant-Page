@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #0F172B;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+    color: #f2f2f2;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li.active,
+nav ul li:hover{
+  color: #111;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 885px;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('./icon.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main .image{
+    background-image: url('./icon.jpg');
+    background-position: center;
+    background-size: 1100px;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+    border-radius: 50%;
+}
+
+.main h1{
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 150px;
+    top: 250px;
+}
+
+.main .title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    font-size: 40px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px ;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-top: 250px;
+}
+
+.menu > div {
+    display: grid;
+    background: url('./icon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    color: white;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
